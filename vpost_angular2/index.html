@@ -1,0 +1,77 @@
+<html>
+
+<head>
+    <title>VPOST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+    <!-- IE required polyfills, in this exact order -->
+    <script src="node_modules/es6-shim/es6-shim.min.js"></script>
+    <script src="node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <script src="node_modules/rxjs/bundles/Rx.js"></script>
+    <script src="node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="node_modules/angular2/bundles/router.dev.js"></script>
+    <script src="node_modules/angular2/bundles/http.dev.js"></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+    <!-- Custom styles for this template -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- styles needed for carousel slider -->
+    <link href="node_modules/owlcarousel-pre/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="node_modules/owlcarousel-pre/owl-carousel/owl.theme.css" rel="stylesheet">
+    <!-- Just for debugging purposes. -->
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+<![endif]-->
+    <!-- include pace script for automatic web page progress bar  -->
+    <!--<script>
+        paceOptions = {
+      elements: true
+    };
+    </script>
+    <script src="node_modules/pace/pace.js"></script>-->
+    <!-- 2. Configure SystemJS -->
+    <script>
+    System.config({
+        packages: {
+            app: {
+                format: 'register',
+                defaultExtension: 'js'
+            }
+        }
+    });
+    System.import('app/main')
+        .then(null, console.error.bind(console));
+    </script>
+</head>
+<base href="/">
+<!-- 3. Display the application -->
+
+<body>
+    <vpost>Loading...</vpost>
+</body>
+<script src="node_modules/jquery/dist/jquery.min.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- include carousel slider plugin  -->
+<script src="node_modules/owlcarousel-pre/owl-carousel/owl.carousel.min.js"></script>
+<!-- include equal height plugin  -->
+<script src="node_modules/jquery-match-height/jquery.matchHeight-min.js"></script>
+<!-- include jquery list shorting plugin plugin  -->
+<script src="assets/js/hideMaxListItem.js"></script>
+<!--include jquery.fs plugin for custom scroller and selecter 
+    <script src="node_modules/formstone/dist/js/scrollbar.js"></script>
+    <script src="node_modules/formstone/dist/js/dropdown.js"></script>  -->
+<!-- include custom script for site  -->
+<script src="node_modules/aframe/dist/aframe.min.js"></script>
+<script src="assets/js/script.js"></script>
+
+</html>
